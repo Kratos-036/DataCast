@@ -1,0 +1,94 @@
+
+.top-menu-bar {
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #485563 0%,
+    #29323c 100%
+  );
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 100;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #333; 
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 60px;
+  padding-left: 20px;
+}
+
+.menu-container.slide-in {
+  transform: translateX(0);
+}
+
+.menu-container a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-container a:hover {
+  background-color: #4a5568; 
+  color: #e2e8f0; 
+}
+
+.weather-display {
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: #2d3748; 
+  border-radius: 8px;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-display:hover {
+  background-color: #4a5568;
+  transform: scale(1.05); 
+}
+
+.close-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  font-size: 24px; 
+  color: #cbd5e0; 
+  transition: color 0.3s;
+}
+
+.close-icon:hover {
+  color: #e2e8f0; 
+}

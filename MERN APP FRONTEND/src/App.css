@@ -1,0 +1,21 @@
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-menu-bar {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.cycle-status {
+  display: flex;
+  overflow-x: auto;
+  position: relative;
+  margin-top: 60px;
+}
