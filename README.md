@@ -26,8 +26,8 @@ Before you begin, ensure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/data-management-system.git
-cd data-management-system
+git clone https://github.com/yourusername/DataCast.git
+cd DataCast
 ```
 
 ### Setup Backend
